@@ -1,4 +1,4 @@
-ETL Project Final Report
+#ETL Project Final Report
 
 Extract: your original data sources and how the data was formatted (CSV, JSON, MySQL, etc).
 
