@@ -8,7 +8,7 @@
 6. Query & Join MySQL data (MySQL Workbench)
 
 ## Extract: your original data sources and how the data was formatted (CSV, JSON, MySQL, etc).
-[New York Stock Exchange | Kaggle](https://www.kaggle.com/dgawlik/nyse)
+[New York Stock Exchange | Kaggle](https://www.kaggle.com/dgawlik/nyse) in CSV
 - nyse-securities.Ticker symbol (Joined)
 - nyse-securities.Security
 - nyse-securities.GICS Sector
@@ -18,7 +18,7 @@
 - nyse-fundamentals.Period ending
 - nyse-fundamentals.budget/revenue?
 
-[Financial Tweets | Kaggle](https://www.kaggle.com/davidwallach/financial-tweets)
+[Financial Tweets | Kaggle](https://www.kaggle.com/davidwallach/financial-tweets) in CSV
 - stockerbot-export.timestamp
 - stockerbot-export.source
 - stockerbot-export.symbols (Joined)
