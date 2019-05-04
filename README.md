@@ -9,19 +9,19 @@
 
 ## Extract: your original data sources and how the data was formatted (CSV, JSON, MySQL, etc).
 [New York Stock Exchange | Kaggle](https://www.kaggle.com/dgawlik/nyse)
-nyse-securities.Ticker symbol (Joined)
-nyse-securities.Security
-nyse-securities.GICS Sector
-nyse-securities.GICS Sub Industry
+- nyse-securities.Ticker symbol (Joined)
+- nyse-securities.Security
+- nyse-securities.GICS Sector
+- nyse-securities.GICS Sub Industry
 
-nyse-fundamentals.Ticker symbol (Joined)
-nyse-fundamentals.Period ending
-nyse-fundamentals.budget/revenue?
+- nyse-fundamentals.Ticker symbol (Joined)
+- nyse-fundamentals.Period ending
+- nyse-fundamentals.budget/revenue?
 
 [Financial Tweets | Kaggle](https://www.kaggle.com/davidwallach/financial-tweets)
-stockerbot-export.timestamp
-stockerbot-export.source
-stockerbot-export.symbols (Joined)
+- stockerbot-export.timestamp
+- stockerbot-export.source
+- stockerbot-export.symbols (Joined)
 
 ## Transform: what data cleaning or transformation was required.
 
