@@ -8,7 +8,7 @@
 6. Query & Join MySQL data (MySQL Workbench)
 
 ## Extract: your original data sources and how the data was formatted (CSV, JSON, MySQL, etc).
-+ [New York Stock Exchange | Kaggle](https://www.kaggle.com/dgawlik/nyse)
+[New York Stock Exchange | Kaggle](https://www.kaggle.com/dgawlik/nyse)
 + nyse-securities.csv - includes ticker, security name and industry information
 + nyse-fundamentals.csv - includes ticker and financial data
 
@@ -34,4 +34,6 @@ For each of the tables, I selected only the columns that I needed for my tables.
 - nyse-fundamentals.sga_percentage (Added column calculation of sga/total_revenue to get percentage)
 
 ## Load: the final database, tables/collections, and why this was chosen.
-The MySQL database was loaded from the Jupyter Notebook and later joined by the ticker name in MySQL. 
+The MySQL database "company_db" was loaded from the Jupyter Notebook with the 2 tables (company_securities and company_fundamentals) and later joined by the ticker name in MySQL. 
+
+These data files were chosen to be able to do further analysis on how much each industry is spending on their Marketing. The SG&A percentage provides a view of how much of their total revenue is allocated to these expenses. 
