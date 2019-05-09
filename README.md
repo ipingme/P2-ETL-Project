@@ -8,28 +8,30 @@
 6. Query & Join MySQL data (MySQL Workbench)
 
 ## Extract: your original data sources and how the data was formatted (CSV, JSON, MySQL, etc).
-+ [New York Stock Exchange | Kaggle](https://www.kaggle.com/dgawlik/nyse) in CSV
-+ [Financial Tweets | Kaggle](https://www.kaggle.com/davidwallach/financial-tweets) in CSV
-
++ [New York Stock Exchange | Kaggle](https://www.kaggle.com/dgawlik/nyse)
++ nyse-securities.csv - includes ticker, security name and industry information
++ nyse-fundamentals.csv - includes ticker and financial data
 
 ## Transform: what data cleaning or transformation was required.
-[New York Stock Exchange | Kaggle](https://www.kaggle.com/dgawlik/nyse)
+For each of the tables, I selected only the columns that I needed for my tables. Column names were renamed to snake case to match the MySQL database. 
 
 ### Table 1 - company_securities
-- nyse-securities.Ticker symbol (Joined)
-- nyse-securities.Security
-- nyse-securities.GICS Sector
-- nyse-securities.GICS Sub Industry
+- nyse-securities.ticker (Joined)
+- nyse-securities.security_name
+- nyse-securities.gics_sector
+- nyse-securities.gics_sub_industry
 
 ### Table 2 - company_fundamentals
-- nyse-fundamentals.Ticker symbol (Joined)
-- nyse-fundamentals.Period ending
-- nyse-fundamentals.budget/revenue?
-
-[Financial Tweets | Kaggle](https://www.kaggle.com/davidwallach/financial-tweets)
-### Table 3 - tweets
-- stockerbot-export.timestamp
-- stockerbot-export.source
-- stockerbot-export.symbols (Joined)
+- nyse-fundamentals.ticker symbol (Joined)
+- nyse-fundamentals.year (Converted date to year only)
+- nyse-fundamentals.accounts_payable
+- nyse-fundamentals.accounts_receivable
+- nyse-fundamentals.cost_of_rev
+- nyse-fundamentals.inventory
+- nyse-fundamentals.net_income
+- nyse-fundamentals.sga
+- nyse-fundamentals.total_revenue 
+- nyse-fundamentals.sga_percentage (Added column calculation of sga/total_revenue to get percentage)
 
 ## Load: the final database, tables/collections, and why this was chosen.
+The MySQL database was loaded from the Jupyter Notebook and later joined by the ticker name in MySQL. 
